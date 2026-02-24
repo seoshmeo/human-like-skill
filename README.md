@@ -32,7 +32,12 @@ rm -rf /tmp/human-like-skill
 
 ### Option 3: Download `.skill` file
 
-Grab `human-like.skill` from [Releases](https://github.com/seoshmeo/human-like-skill/releases) and unzip into `~/.claude/skills/`.
+```bash
+curl -L -o /tmp/human-like.skill \
+  https://github.com/seoshmeo/human-like-skill/raw/master/human-like.skill
+unzip -o /tmp/human-like.skill -d ~/.claude/skills/
+rm /tmp/human-like.skill
+```
 
 ## Usage
 
